@@ -1,0 +1,55 @@
+ZEGA SOURCE AVAILABLE LICENSE (ZSAL) 1.0
+Copyright © 2026 ZEGA. All Rights Reserved.
+
+This license governs the use, modification, and distribution of the software, documentation, and related trademarks owned by ZEGA ("Licensor"). By accessing, copying, modifying, or distributing any part of this software, you ("Licensee") agree to be bound by the terms and conditions of this agreement.
+
+1. DEFINITIONS
+
+"The Software" shall mean the source code, object code, compiler, interpreter, standard libraries, associated documentation, and any other materials provided by ZEGA that constitute the programming language and its toolchain.
+
+"User Application" shall mean original software applications, libraries, or binaries created by Licensee that are compiled using The Software but do not consist of a substantial derivative work of The Software's compiler or toolchain intended for redistribution.
+
+"Derived Compiler" shall mean a modification of The Software's source code that results in a new or altered compiler, interpreter, or development toolchain.
+
+2. OWNERSHIP & TRADEMARK PROTECTION
+The Software, including its architecture, design, code, and documentation, is the exclusive intellectual property of ZEGA. The Protected Marks are valuable trademarks of ZEGA and are protected by applicable trademark laws. This license does not grant Licensee any rights to use the Protected Marks except as explicitly identified in Section 3. Any use of the Protected Marks for branding, marketing, or naming any Derived Compiler or competing product is strictly prohibited. Any derivative work must be clearly distinguished from the official ZEGA distribution and must not imply any form of endorsement by, affiliation with, or approval from ZEGA.
+
+3. PERMITTED USE
+Subject to the terms and conditions of this license, ZEGA grants Licensee a non-exclusive, non-transferable, revocable, and worldwide right to:
+
+Use and Run: Use The Software to develop, compile, execute, and distribute User Applications for any lawful purpose, whether commercial or non-commercial, without the payment of royalties or fees to ZEGA.
+
+Internal Modification: Modify the source code of The Software for personal or internal business use to suit specific workflow requirements, provided such modifications are not distributed externally.
+
+4. CONDITIONS FOR REDISTRIBUTION OF DERIVED COMPILERS
+Licensee may redistribute a Derived Compiler (a modified version of The Software's compiler or toolchain) only if the following strict conditions are met:
+
+Rebranding: The Derived Compiler must be distributed under a new, unique name that does not include or resemble the Protected Marks.
+
+Attribution & Notice: The Derived Compiler must include a verbatim copy of this original copyright notice and license text. It must also contain a prominent notice stating that it is a modified version, specifying the changes made, and clearly indicating that the original product is the property of ZEGA.
+
+Disclaimer of Endorsement: All distributed materials must include a clear and conspicuous disclaimer stating: "This is an unofficial, modified version of the ZEGA software. ZEGA is not responsible for the functionality or content of this distribution."
+
+5. RESTRICTIONS
+Licensee is expressly prohibited from the following activities:
+
+Commercial Exploitation of The Software: Selling, sub-licensing, renting, or leasing The Software (or any substantial portion of its source code) as a standalone product or as a hosted service under the Protected Marks or any misleading name.
+
+Misrepresentation: Claiming official endorsement, sponsorship, or support by ZEGA without prior express written permission.
+
+Removal of Notices: Removing, altering, or obscuring any copyright, trademark, or other proprietary rights notices contained within The Software.
+
+6. DISCLAIMER OF WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE" WITH ALL FAULTS AND WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED. TO THE MAXIMUM EXTENT PERMITTED BY LAW, ZEGA EXPRESSLY DISCLAIMS ALL WARRANTIES, WHETHER EXPRESS, IMPLIED, STATUTORY, OR OTHERWISE, WITH RESPECT TO THE SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, QUIET ENJOYMENT, ACCURACY, AND NON-INFRINGEMENT. ZEGA DOES NOT WARRANT THAT THE SOFTWARE WILL MEET LICENSEE'S REQUIREMENTS, OPERATE WITHOUT INTERRUPTION, BE ERROR-FREE, OR THAT ALL ERRORS CAN OR WILL BE CORRECTED.
+
+7. LIMITATION OF LIABILITY
+TO THE EXTENT NOT PROHIBITED BY LAW, IN NO EVENT SHALL ZEGA BE LIABLE FOR ANY PERSONAL INJURY, PROPERTY DAMAGE, LOST PROFITS, COST OF SUBSTITUTE GOODS OR SERVICES, LOSS OF DATA, LOSS OF GOODWILL, BUSINESS INTERRUPTION, COMPUTER FAILURE OR MALFUNCTION, OR ANY OTHER CONSEQUENTIAL, INCIDENTAL, INDIRECT, EXEMPLARY, SPECIAL, OR PUNITIVE DAMAGES WHATSOEVER ARISING OUT OF OR IN CONNECTION WITH THE USE OR INABILITY TO USE THE SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+8. GENERAL PROVISIONS
+
+Termination: This license is effective until terminated. Licensee's rights will terminate automatically without notice if Licensee fails to comply with any term of this license. Upon termination, Licensee must cease all use of The Software and destroy all copies.
+
+Governing Law: This agreement shall be governed by and construed in accordance with the laws of the jurisdiction in which ZEGA is established, without regard to its conflict of laws principles.
+
+Entire Agreement: This license constitutes the entire agreement between the parties concerning the subject matter hereof and supersedes all prior or contemporaneous understandings regarding such subject matter.
+
