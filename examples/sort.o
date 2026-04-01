@@ -1,0 +1,43 @@
+// sort.o -- Sorting demo in the O language
+// Demonstrates: variables, if/else, assignment
+// Run: oc.exe examples\sort.o --jit
+
+extern fn printf(fmt: *u8, ...) -> i32;
+
+fn main() -> i64 {
+    let v0: i64 = 64;
+    let v1: i64 = 34;
+    let v2: i64 = 25;
+    let v3: i64 = 12;
+    let v4: i64 = 22;
+    let v5: i64 = 11;
+    let v6: i64 = 90;
+
+    printf("Before: %lld %lld %lld %lld %lld %lld %lld\n",
+           v0, v1, v2, v3, v4, v5, v6);
+
+    let tmp: i64 = 0;
+    if v0 > v1 { tmp = v0; v0 = v1; v1 = tmp; }
+    if v1 > v2 { tmp = v1; v1 = v2; v2 = tmp; }
+    if v2 > v3 { tmp = v2; v2 = v3; v3 = tmp; }
+    if v3 > v4 { tmp = v3; v3 = v4; v4 = tmp; }
+    if v4 > v5 { tmp = v4; v4 = v5; v5 = tmp; }
+    if v5 > v6 { tmp = v5; v5 = v6; v6 = tmp; }
+    if v0 > v1 { tmp = v0; v0 = v1; v1 = tmp; }
+    if v1 > v2 { tmp = v1; v1 = v2; v2 = tmp; }
+    if v2 > v3 { tmp = v2; v2 = v3; v3 = tmp; }
+    if v3 > v4 { tmp = v3; v3 = v4; v4 = tmp; }
+    if v4 > v5 { tmp = v4; v4 = v5; v5 = tmp; }
+    if v0 > v1 { tmp = v0; v0 = v1; v1 = tmp; }
+    if v1 > v2 { tmp = v1; v1 = v2; v2 = tmp; }
+    if v2 > v3 { tmp = v2; v2 = v3; v3 = tmp; }
+    if v3 > v4 { tmp = v3; v3 = v4; v4 = tmp; }
+    if v0 > v1 { tmp = v0; v0 = v1; v1 = tmp; }
+    if v1 > v2 { tmp = v1; v1 = v2; v2 = tmp; }
+    if v0 > v1 { tmp = v0; v0 = v1; v1 = tmp; }
+
+    printf("After:  %lld %lld %lld %lld %lld %lld %lld\n",
+           v0, v1, v2, v3, v4, v5, v6);
+
+    return 0;
+}

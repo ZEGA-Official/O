@@ -1,0 +1,33 @@
+// fizzbuzz.o -- FizzBuzz in the O language
+// Demonstrates: while loop, mod operator, if/else chains
+// Run: oc.exe examples\fizzbuzz.o --jit
+
+extern fn printf(fmt: *u8, ...) -> i32;
+extern fn puts(s: *u8) -> i32;
+
+fn fizzbuzz(n: i64) {
+    let i: i64 = 1;
+    while i <= n {
+        let fizz: i64 = i % 3 == 0;
+        let buzz: i64 = i % 5 == 0;
+        if fizz != 0 {
+            if buzz != 0 {
+                puts("FizzBuzz");
+            } else {
+                puts("Fizz");
+            }
+        } else {
+            if buzz != 0 {
+                puts("Buzz");
+            } else {
+                printf("%lld\n", i);
+            }
+        }
+        i = i + 1;
+    }
+}
+
+fn main() -> i64 {
+    fizzbuzz(20);
+    return 0;
+}

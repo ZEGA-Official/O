@@ -1,0 +1,40 @@
+// fib.o -- Fibonacci in the O language
+// Demonstrates: recursion, if/else, arithmetic, return values
+// Run: oc.exe examples\fib.o --jit
+
+extern fn printf(fmt: *u8, ...) -> i32;
+
+fn fib(n: i64) -> i64 {
+    if n <= 1 {
+        return n;
+    }
+    return fib(n - 1) + fib(n - 2);
+}
+
+fn fib_iter(n: i64) -> i64 {
+    if n <= 1 {
+        return n;
+    }
+    let a: i64 = 0;
+    let b: i64 = 1;
+    let i: i64 = 2;
+    while i <= n {
+        let tmp: i64 = a + b;
+        a = b;
+        b = tmp;
+        i = i + 1;
+    }
+    return b;
+}
+
+fn main() -> i64 {
+    printf("-- Fibonacci (recursive) --\n");
+    let i: i64 = 0;
+    while i <= 10 {
+        printf("  fib(%lld) = %lld\n", i, fib(i));
+        i = i + 1;
+    }
+    printf("\n-- Fibonacci (iterative, n=40) --\n");
+    printf("  fib(40) = %lld\n", fib_iter(40));
+    return 0;
+}

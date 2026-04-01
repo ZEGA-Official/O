@@ -1,0 +1,15 @@
+// hello.o -- Hello World in the O language
+// Run: oc.exe examples\hello.o --jit
+
+extern fn puts(s: *u8) -> i32;
+extern fn printf(fmt: *u8, ...) -> i32;
+
+fn greet(name: *u8) {
+    printf("Hello, %s! From the O language.\n", name);
+}
+
+fn main() -> i64 {
+    greet("Z-TEAM");
+    puts("JIT compiled. Zero LLVM. Pure x86-64.");
+    return 0;
+}
