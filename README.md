@@ -1,5 +1,5 @@
 # **O**
-*The **Official** O language*
+*The **Official** O language* (it has not been completed but is nearing completion)
 
 ## Syntax
 ... (to be finished)
