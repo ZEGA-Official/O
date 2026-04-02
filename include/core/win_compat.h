@@ -95,7 +95,9 @@ static inline void *dlsym(void *handle, const char *name) {
 typedef struct _stat os_stat_t;
 #define mkdir(p,m)  _mkdir(p)
 
-// ── clock_gettime ─────────────────────────────────────────────
+// ── clock_gettime – only define if not already provided ──────
+// On MinGW, the system provides clock_gettime in pthread_time.h
+#if !defined(__MINGW32__)
 #ifndef CLOCK_MONOTONIC
 #define CLOCK_MONOTONIC 1
 #ifndef _TIMESPEC_DEFINED
@@ -111,15 +113,18 @@ static inline int clock_gettime(int clk, struct timespec *tp) {
     return 0;
 }
 #endif
+#endif // !__MINGW32__
 
-// ── Process stubs (no fork on Windows) ───────────────────────
+// ── Process stubs – avoid conflicting with MinGW built-in ────
 #ifndef _PID_T_
 #define _PID_T_
 typedef int pid_t;
 #endif
+#if !defined(__MINGW32__) && !defined(fork)
 static inline pid_t fork(void) { return -1; }
+#endif
 
-// ── sys/wait.h ────────────────────────────────────────────────
+// ── sys/wait.h – minimal stubs ───────────────────────────────
 #define WEXITSTATUS(s) (s)
 static inline int waitpid(int pid, int *st, int opts) {
     (void)pid; (void)st; (void)opts; return -1;

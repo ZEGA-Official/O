@@ -12,6 +12,8 @@
 #ifndef _WIN32
 #include <unistd.h>
 #include <sys/wait.h>
+#else
+#include <process.h>  // for getpid on Windows
 #endif
 #include <sys/stat.h>
 #include <fcntl.h>
