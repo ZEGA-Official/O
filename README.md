@@ -11,4 +11,4 @@
 ... (to be finished)
 
 ## Why O?
-We named it **O** beacuse it is **Only easy and fast** and **Open** to use.
+We named it **O** beacuse it is **Only great** and **Open Always**.
